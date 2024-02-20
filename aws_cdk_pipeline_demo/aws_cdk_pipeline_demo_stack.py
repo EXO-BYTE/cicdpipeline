@@ -22,5 +22,12 @@ class AwsCdkPipelineDemoStack(Stack):
                                 "cdk synth"]
                         )
                     )
+            
+        testing_stage = pipeline.add_stage(MyPipelineAppStage(self,"testing",
+        env=cdk.Environment(account="429005187143", region="us-east-1")))
+        
+        
+        
+     
     
         
