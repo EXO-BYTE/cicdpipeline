@@ -8,6 +8,7 @@ from aws_cdk_pipeline_demo.aws_cdk_pipeline_demo_stack import AwsCdkPipelineDemo
 
 app = cdk.App()
 AwsCdkPipelineDemoStack(app, "AwsCdkPipelineDemoStack",
+ env=cdk.Environment(account="429005187143", region="us-east-1") #update you account and region
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
